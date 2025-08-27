@@ -2,7 +2,6 @@ package design.WebCrawler;
 
 import java.net.URI;
 import java.net.http.*;
-import java.sql.*;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;

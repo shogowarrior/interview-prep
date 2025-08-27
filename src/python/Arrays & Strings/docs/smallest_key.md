@@ -6,18 +6,23 @@ If the solution involves two keys that have the same value, return the the key t
 
 If n is larger than the number of distinct keys or equal to 0, then return null.
 
-**Signature**
+## Signature
+
 ```java
 String returnSmallestKey(HashMap<String, Integer> inputDict, int n)
 ```
-**Input**
- - inputDict: Map with a string as the key and integer as the value
- - n: Integer representing the nth smallest value to be returned
 
-**Output**
- - string representing the key
+## Input
+  
+- inputDict: Map with a string as the key and integer as the value
+- n: Integer representing the nth smallest value to be returned
 
-**Examples**
+## Output
+
+- string representing the key
+
+## Examples
+
 ```python
 inputDict: {"laptop": 999,"smartphone": 999,"smart tv": 500,"smart watch": 300,"smart home": 9999999}
 n: 2 
@@ -34,4 +39,5 @@ output: null
 inputDict: {"a": 10,"b": 20,"c": 3,"d": 2,"e": 9}
 n: 1
 output: "d"
+
 ```

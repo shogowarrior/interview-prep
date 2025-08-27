@@ -1,17 +1,23 @@
 # Fill in the Blanks
+
 Given an array containing null values fill in the null values with most recent non-null value in the array.
-**Signature**
+
+## Signature
+
 ```java
 integer[] returnFilledArray(integer[] input_lst)
 ```
 
-**Input**
+## Input
+
 Array of integers and/or null values
 
-**Output**
+## Output
+
 Array of integers and/or null values
 
-**Examples**
+## Example
+
 ```python
 input:  [1,null,2,3,null,null,5,null]
 output: [1, 1, 2, 3, 3, 3, 5, 5]
@@ -27,4 +33,5 @@ output: [5,5,5]
 
 input: [1,null,2,3,null,null,5,null]
 output: [1,1,2,3,3,3,5,5]
+
 ```

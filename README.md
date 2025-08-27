@@ -5,6 +5,7 @@ A comprehensive collection of coding interview preparation materials, system des
 ## 📋 Concepts and Problems Solved
 
 ### Arrays & Strings
+
 - [Character frequency](src/python/Arrays%20&%20Strings/character_frequency.py) - [Complete a function that returns the number of times a given character occurs in the given string.](src/python/Arrays%20&%20Strings/docs/character-frequency.md)
 - [Contiguous subarrays](src/python/Arrays%20&%20Strings/contiguous_subarrays.py) - [You are given an array arr of N integers. For each index i, you are required to determine the number of contiguous subarrays that fulfill the following conditions: The value at index i must be the maximum element in the contiguous subarrays, and these contiguous subarrays must either start from or end on index i.](src/python/Arrays%20&%20Strings/docs/contiguos-subarrays.md)
 - [Left rotation](src/python/Arrays%20&%20Strings/left_rotation.py) - [A left rotation operation on an array shifts each of the array's elements 1 unit to the left.](src/python/Arrays%20&%20Strings/docs/ctci-array-left-rotation-English.pdf)
@@ -23,21 +24,25 @@ A comprehensive collection of coding interview preparation materials, system des
 - [Repeating chars](src/python/Arrays%20&%20Strings/repeating_chars.py)
 
 ### Graphs (BFS & DFS)
+
 - [BFS](src/python/Graphs%20(BFS%20&%20DFS)/bfs.py) - [Consider an undirected graph where each edge weighs 6 units. Each of the nodes is labeled consecutively from 1 to n. You will be given a number of queries. For each query, you will be given a list of edges describing an undirected graph. After you create a representation of the graph, you must determine and report the shortest distance to each of the other nodes from a given starting position using the breadth-first search algorithm (BFS). Return an array of distances from the start node in node number order. If a node is unreachable, return -1 for that node.](src/python/Graphs%20(BFS%20&%20DFS)/docs/bfsshortreach.pdf)
 - [Quickest way up](src/python/Graphs%20(BFS%20&%20DFS)/quickets_way_up.py) - [Markov takes out his Snakes and Ladders game, stares at the board and wonders: "If I can always roll the die to whatever number I want, what would be the least number of rolls to reach the destination?"](src/python/Graphs%20(BFS%20&%20DFS)/docs/the-quickest-way-up.pdf)
 
 ### Hash & Maps
+
 - [Colorful numbers](src/python/Hash%20&%20Maps/colorful_numbers.py) - [Objective: Given a number, find out whether it is colorful.](src/python/Hash%20&%20Maps/docs/colorful_numbers.md)
 - [Ice cream parlor](src/python/Hash%20&%20Maps/icecream_parlor.py) - [Two friends like to pool their money and go to the ice cream parlor. They always choose two distinct flavors and they spend all of their money.](src/python/Hash%20&%20Maps/docs/icecream-parlor.pdf)
 - [Pair sums](src/python/Hash%20&%20Maps/pair_sums.py) - [Given a list of n integers arr[0..(n-1)], determine the number of different pairs of elements within it which sum to k.](src/python/Hash%20&%20Maps/docs/pair-sums.md)
 
 ### Heap
+
 - [Kth largest](src/python/heap/kth_largest.py)
 - [Min heap](src/python/heap/minheap.py)
 - [Q heap](src/python/heap/qheap.py)
 - [Top k listings](src/python/heap/top_k_listings.py)
 
 ### Lists
+
 - [Cycle detection](src/python/Lists/cycle_detection.py) - [Determine if a linked list contains a cycle.](src/python/Lists/docs/detect-whether-a-linked-list-contains-a-cycle-English.pdf)
 - [Fill in the blanks](src/python/Lists/fill_in_the_blanks.py) - [Fill null values with most recent non-null value.](src/python/Lists/docs/fill-in-the-blanks.md)
 - [Flatten 2D matrix](src/python/Lists/flatten_2D_matrix.py)
@@ -46,16 +51,19 @@ A comprehensive collection of coding interview preparation materials, system des
 - [Missing balanced numbers](src/python/Lists/missing_balanced_numbers.py) - [Find elements needed to balance an array.](src/python/Lists/docs/missing_balanced_numbers.md)
 
 ### Recursion
+
 - [Amenities listing](src/python/Recursion/amneties_listing.py)
 - [Encrypted words](src/python/Recursion/encrypted_words.py) - [Encrypt alphabetic strings by shuffling characters.](src/python/Recursion/docs/encrypted-words.md)
 - [Fibonacci](src/python/Recursion/fibonacci.py) - [Calculate the nth Fibonacci number.](src/python/Recursion/docs/fibonacci-numbers.pdf)
 - [Permutation](src/python/Recursion/permuation.py)
 
 ### Search
+
 - [Billion users](src/python/Search/billion_users.py) - [Find days to reach 1 billion users across apps.](src/python/Search/docs/billion-users.md)
 - [Revenue milestones](src/python/Search/revenue_milestones.py) - [Find days when revenue milestones are reached.](src/python/Search/docs/revenue-milestones.md)
 
 ### Sorting Algorithms
+
 - [Balanced split](src/python/Sorting%20Algorithms/balanced_split.py) - [Split array into subsequences with equal sum and strict ordering.](src/python/Sorting%20Algorithms/docs/balanced-split.md)
 - [Counting triangles](src/python/Sorting%20Algorithms/counting_triangles.py)
 - [Insertion sort 1](src/python/Sorting%20Algorithms/insertion_sort_1.py)
@@ -66,17 +74,20 @@ A comprehensive collection of coding interview preparation materials, system des
 - [Quick sort 2](src/python/Sorting%20Algorithms/quick_sort_2.py)
 
 ### Stacks & Queues
+
 - [Balanced brackets](src/python/Stacks%20&%20Queues/balanced_brackets.py)
 - [Queue removals](src/python/Stacks%20&%20Queues/queue_removals.py)
 - [Queue using stacks](src/python/Stacks%20&%20Queues/queue_using_stacks.py)
 
 ### Trees
+
 - [Binary search insertion](src/python/Trees/binary_search_insertion.py)
 - [BST](src/python/Trees/bst.py)
 - [Right sum](src/python/Trees/right_sum.py)
 - [Tree height](src/python/Trees/tree_height.py)
 
 ### Banking System
+
 - [Account](src/main/java/design/banking/Account.java) - [Multi-tiered in-memory banking system with REST APIs.](src/main/java/design/banking/readme.md)
 - [Banking application](src/main/java/design/banking/BankingApplication.java) - [Multi-tiered in-memory banking system with REST APIs.](src/main/java/design/banking/readme.md)
 - [Banking controller](src/main/java/design/banking/BankingController.java) - [Multi-tiered in-memory banking system with REST APIs.](src/main/java/design/banking/readme.md)
@@ -85,6 +96,7 @@ A comprehensive collection of coding interview preparation materials, system des
 - [Transaction](src/main/java/design/banking/Transaction.java) - [Multi-tiered in-memory banking system with REST APIs.](src/main/java/design/banking/readme.md)
 
 ### File System
+
 - [Distributed file system](src/main/java/design/filesystem/DistributedFileSystem.java)
 - [File filter](src/main/java/design/filesystem/FileFilter.java)
 - [File object](src/main/java/design/filesystem/FileObject.java)
@@ -93,6 +105,7 @@ A comprehensive collection of coding interview preparation materials, system des
 - [File system](src/main/java/design/filesystem/FileSystem.java)
 
 ### Web Crawler
+
 - [Async web crawler](src/main/java/design/WebCrawler/AsyncWebCrawler.java)
 - [Async web crawler enhanced](src/main/java/design/WebCrawler/AsyncWebCrawlerEnhanced.java)
 - [Concurrent web crawler](src/main/java/design/WebCrawler/ConcurrentWebCrawler.java)
@@ -100,6 +113,7 @@ A comprehensive collection of coding interview preparation materials, system des
 - [Sync web crawler](src/main/java/design/WebCrawler/SyncWebCrawler.java)
 
 ### Stack Trace Reconstruction
+
 - [Stack trace reconstruction](src/main/java/design/StackTraceReconstruction.java)
 
 ---

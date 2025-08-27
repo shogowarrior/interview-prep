@@ -11,17 +11,22 @@ It's guaranteed that, for any possible valid input, each student will eventually
 You must compute a list of n integers output, whose element at i-1 is equal to the number of signatures that will be present in student i's yearbook once they receive it back.
 
 ## Signature
+
 ```java
 int[] findSignatureCounts(int[] arr)
 ```
+
 ## Input
+
 n is in the range [1, 100,000].
 Each value arr[i] is in the range [1, n], and all values in arr[i] are distinct.
 
 ## Output
+
 Return a list of n integers output, as described above.
 
 ## Example 1
+
 ```sh
 n = 2
 arr = [2, 1]
@@ -29,18 +34,22 @@ output = [2, 2]
 ```
 
 Pass 1:
+
 - Student 1 signs their own yearbook. Then they pass the book to the student at arr[0], which is Student 2.
 - Student 2 signs their own yearbook. Then they pass the book to the student at arr[1], which is Student 1.
 
 Pass 2:
+
 - Student 1 signs Student 2's yearbook. Then they pass it to the student at arr[0], which is Student 2.
 - Student 2 signs Student 1's yearbook. Then they pass it to the student at arr[1], which is Student 1.
 
 Pass 3:
+
 - Both students now hold their own yearbook, so the process is complete.
 - Each student received 2 signatures.
 
 ## Example 2
+
 ```sh
 n = 2
 arr = [1, 2]
@@ -48,9 +57,11 @@ output = [1, 1]
 ```
 
 Pass 1:
+
 - Student 1 signs their own yearbook. Then they pass the book to the student at arr[0], which is themself, Student 1.
 - Student 2 signs their own yearbook. Then they pass the book to the student at arr[1], which is themself, Student 2.
 
 Pass 2:
+
 - Both students now hold their own yearbook, so the process is complete.
 - Each student received 1 signature.

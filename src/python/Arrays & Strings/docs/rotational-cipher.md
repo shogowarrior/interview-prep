@@ -7,28 +7,35 @@ For example, if the string "Zebra-493?" is rotated 3 places, the resulting strin
 Given a string and a rotation factor, return an encrypted string.
 
 ## Signature
+
 ```java
 string rotationalCipher(string input, int rotationFactor)
 ```
 
 ## Input
+
 ```sh
 1 <= |input| <= 1,000,000
 0 <= rotationFactor <= 1,000,000
 ```
 
 ## Output
+
 Return the result of rotating input a number of times equal to rotationFactor.
 
 ## Example 1
+
 ```sh
 input = Zebra-493?
 rotationFactor = 3
 output = Cheud-726?
 ```
+
 ## Example 2
+
 ```sh
 input = abcdefghijklmNOPQRSTUVWXYZ0123456789
 rotationFactor = 39
 output = nopqrstuvwxyzABCDEFGHIJKLM9012345678
+
 ```
