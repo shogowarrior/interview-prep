@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "src/design",
+        "src/main/java/design/WebCrawler"
+    ],
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "maven.view": "flat",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
