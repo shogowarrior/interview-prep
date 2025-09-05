@@ -26,7 +26,7 @@ This directory contains a curated collection of company-specific interview probl
 - [Top 10 Feature Case Study](../concepts/System-Design/case-studies.md#top-10-feature-implementation-case-study)
 - [Personalization Engine](../concepts/System-Design/case-studies.md#personalization-engine-at-scale)
 
-## [Nextdoor](nextdoor/README.md)
+## Nextdoor
 
 - [Comment Threading](nextdoor/comments.py)
 

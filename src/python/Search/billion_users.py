@@ -5,7 +5,7 @@ def getBillionUsersDay(growthRates):
 
     # Set initial search bounds
     low, high = 1, 2000  # 2000 is an upper estimate; could increase if needed
-    target = 1_000_000_000  # 1 billion
+    target = 1_000_000_000  # 1. billion
 
     # Binary search to find the minimum t that reaches or exceeds 1 billion users
     while low < high:

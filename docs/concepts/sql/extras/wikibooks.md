@@ -89,7 +89,7 @@ GROUP BY s.signup_date;
 
 **Cross-references:**
 
-- [JOINs and Relationships](../joins/README.md)
+- [JOINs and Relationships](../joins/page-impressions-analysis.md)
 - [Aggregate Functions](../aggregation/aggregate-functions.md)
 
 ### 3. Most Watched Show per Day
@@ -543,7 +543,7 @@ Based on the following Wikibooks chapters:
 These exercises complement the main SQL concepts:
 
 - Practice basic skills from [aggregation](../aggregation/README.md)
-- Apply JOIN patterns from [joins](../joins/README.md)
+- Apply JOIN patterns from [joins](../joins/page-impressions-analysis.md)
 - Build toward [window functions](../window-functions/README.md)
 
 ## 📝 Adding New Exercises

@@ -16,7 +16,7 @@ This comprehensive guide covers SQL interview questions specifically tailored fo
 
 ## Beginner Level
 
-### 1 Daily Active Users (DAU)
+### 1. Daily Active Users (DAU)
 
 **Business Context:**
 
@@ -58,7 +58,7 @@ ORDER BY activity_date;
 
 ---
 
-### 2 Day-1 Retention
+### 2. Day-1 Retention
 
 **Business Context:**
 
@@ -91,12 +91,12 @@ GROUP BY s.signup_date;
 
 **Cross-references:**
 
-- [`joins`](../joins/README.md)
+- [`joins`](../joins/page-impressions-analysis.md)
 - [`aggregation functions`](../aggregation/aggregate-functions.md)
 
 ## Intermediate Level
 
-### 3 Most Watched Show per Day
+### 3. Most Watched Show per Day
 
 **Business Context:**
 
@@ -143,7 +143,7 @@ WHERE rnk = 1;
 
 ---
 
-### 4 Top 3 Shows per Region
+### 4. Top 3 Shows per Region
 
 **Business Context:**
 
@@ -182,7 +182,7 @@ WHERE rnk <= 3;
 
 ---
 
-### 5 Consecutive Days Watching
+### 5. Consecutive Days Watching
 
 **Business Context:**
 
@@ -221,7 +221,7 @@ AND DATEDIFF(prev_day, prev2_day) = 1;
 
 ## Advanced Level
 
-### 6 Heavy Watchers Retention (CTE)
+### 6. Heavy Watchers Retention (CTE)
 
 **Business Context:**
 
@@ -266,7 +266,7 @@ JOIN heavy_watchers h2
 
 ---
 
-### 7 Content Hierarchy (Recursive CTE)
+### 7. Content Hierarchy (Recursive CTE)
 
 **Business Context:**
 
@@ -317,7 +317,7 @@ SELECT * FROM content_hierarchy ORDER BY path;
 
 ---
 
-### 8 Percentile Analysis
+### 8. Percentile Analysis
 
 **Business Context:**
 
@@ -361,7 +361,7 @@ WHERE pct_rank <= 0.01;
 
 ---
 
-### 9 Recommendation Acceptance Rate
+### 9. Recommendation Acceptance Rate
 
 **Business Context:**
 
@@ -395,7 +395,7 @@ LEFT JOIN watch_events w
 
 **Cross-references:**
 
-- [`joins`](../joins/README.md)
+- [`joins`](../joins/page-impressions-analysis.md)
 - [`aggregation functions`](../aggregation/aggregate-functions.md)
 
 ## Optimization Challenges
@@ -535,7 +535,7 @@ GROUP BY DATE(event_ts), show_id;
 - **Aggregation Functions**: [`aggregation functions`](../aggregation/aggregate-functions.md)
 - **Window Functions**: [`window functions overview`](../window-functions/window-functions-overview.md)
 - **Common Table Expressions**: [`cte overview`](../cte/README.md)
-- **Joins**: [`joins`](../joins/README.md)
+- **Joins**: [`joins`](../joins/page-impressions-analysis.md)
 - **Subqueries**: [`subqueries`](../subqueries/subqueries.md)
 - **Optimization**: [`sql optimization challenges`](../optimization/sql-optimization-challenges.md)
 
