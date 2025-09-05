@@ -151,7 +151,3 @@ CREATE TABLE kpi_outcome (
 * How would you design experiments for global recommendation systems?
 * What are the trade-offs between different experiment assignment strategies?
 * How do you ensure statistical rigor in A/B testing at scale?
-
----
-
-Navigate back to [Event Streaming](./) | [Data Modeling Index](../README.md)

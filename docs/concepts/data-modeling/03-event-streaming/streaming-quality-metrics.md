@@ -99,7 +99,3 @@ GROUP BY session_id;
 * How would you design real-time QoS monitoring and alerting?
 * What are the trade-offs between different QoS metrics for different content types?
 * How do you handle the volume of QoS events at scale?
-
----
-
-Navigate back to [Event Streaming](./) | [Data Modeling Index](../README.md)

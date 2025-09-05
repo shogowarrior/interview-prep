@@ -473,7 +473,7 @@ WHERE event_ts >= '2025-01-01'
 
 ***Related Concepts***:
 
- [`partitioning-sharding.md`](../../data-modeling/04-scalability-patterns/partitioning-sharding.md)
+ [`partitioning-sharding.md`](../../Data-Modeling/04-scalability-patterns/partitioning-sharding.md)
 
 ---
 
@@ -525,8 +525,8 @@ GROUP BY DATE(event_ts), show_id;
 
 - **Aggregation Functions**: [`aggregation-functions.md`](../aggregation/aggregate-functions.md)
 - **Window Functions**: [`window-functions-overview.md`](../window-functions/window-functions-overview.md)
-- **Common Table Expressions**: [`cte-overview.md`](../cte/)
-- **Joins**: [`joins.md`](../joins/)
+- **Common Table Expressions**: [`cte-overview.md`](../cte/README.md)
+- **Joins**: [`joins.md`](../joins/README.md)
 - **Subqueries**: [`subqueries.md`](../subqueries/subqueries.md)
 - **Optimization**: [`sql-optimization-challenges.md`](../optimization/sql-optimization-challenges.md)
 
@@ -561,31 +561,6 @@ GROUP BY DATE(event_ts), show_id;
 ## TopTal SQL Interview Questions
 
 This directory contains SQL interview questions and coding challenges adapted from [TopTal's engineering blog](https://www.toptal.com/) and SQL interview preparation resources. Focus is on real-world interview scenarios and advanced SQL patterns.
-
-## 📚 Content Overview
-
-### Interview Question Categories
-
-#### [data-analysis](data-analysis/) - *In Development*
-
-- Business metrics and KPI calculations
-- Customer segmentation and analytics
-- Revenue and performance analysis
-- A/B testing data analysis
-
-#### [ranking-problems](../problems/02-ranking-window-functions/) - *In Development*
-
-- Top-N queries and ranking patterns
-- Percentile calculations and distributions
-- Running totals and moving averages
-- Competitive analysis queries
-
-#### [complex-joins](complex-joins/) - *In Development*
-
-- Multi-level hierarchical data
-- Complex relationship traversals
-- Data warehousing patterns
-- ETL and data pipeline queries
 
 ## 🎯 Interview Question Structure
 
@@ -674,7 +649,7 @@ ORDER BY total_revenue DESC;
 
 Based on TopTal's SQL interview preparation articles:
 
-- [SQL Interview Questions](https://www.toptal.com/sql/interview-questions)
+- [SQL Interview Questions](https://www.toptal.com/SQL/interview-questions)
 - [Database Design Patterns](https://www.toptal.com/database)
 - [Data Engineering Challenges](https://www.toptal.com/data-engineering)
 
@@ -712,7 +687,3 @@ When adding TopTal-style questions:
 3. Include performance analysis and optimization notes
 4. Tag with relevant SQL concepts and business domains
 5. Reference original TopTal article when applicable
-
----
-
-## Navigate back to [SQL Extras](../README.md) | [SQL Concepts](../../README.md)

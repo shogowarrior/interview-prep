@@ -865,6 +865,6 @@ When faced with architectural challenges, consider this framework:
 
 - [System Architecture](system-architecture.md) - Technical implementation details
 - [Performance Optimization](performance-optimization.md) - Optimization techniques used
-- [Data Modeling Patterns](../data-modeling/) - Schema design decisions
+- [Data Modeling Patterns](../Data-Modeling/README.md) - Schema design decisions
 
 Navigate back to [System Design & Advanced Concepts](README.md)

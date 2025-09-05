@@ -21,10 +21,10 @@ This directory contains a curated collection of company-specific interview probl
 
 ## [Netflix](netflix/README.md)
 
-- [SQL Problems](../concepts/sql/problems/README.md)
-- [Data Modeling](../concepts/data-modeling/README.md)
-- [Top 10 Feature Case Study](../concepts/system-design/case-studies.md#top-10-feature-implementation-case-study)
-- [Personalization Engine](../concepts/system-design/case-studies.md#personalization-engine-at-scale)
+- [SQL Problems](../concepts/SQL/problems/README.md)
+- [Data Modeling](../concepts/Data-Modeling/README.md)
+- [Top 10 Feature Case Study](../concepts/System-Design/case-studies.md#top-10-feature-implementation-case-study)
+- [Personalization Engine](../concepts/System-Design/case-studies.md#personalization-engine-at-scale)
 
 ## [Nextdoor](nextdoor/README.md)
 

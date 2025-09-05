@@ -5,10 +5,8 @@ A comprehensive collection of SQL exercises organized by difficulty level, desig
 ## Table of Contents
 
 - [Beginner Level: Basic Analytics](#beginner-level-basic-analytics)
-
-- [Intermediate Level: Window Functions & Ranking](#intermediate-level-window-functions--ranking)
-
-- [Advanced Level: Complex Patterns & Optimization](#advanced-level-complex-patterns--optimization)
+- [Intermediate Level Window Functions & Ranking](#intermediate-level-window-functions-ranking)
+- [Advanced Level: Complex Patterns & Optimization](#advanced-level-complex-patterns-optimization)
 
 ---
 
@@ -453,7 +451,7 @@ WHERE event_ts >= CURRENT_DATE - INTERVAL '90' DAY;
 **Cross-references:**:
 
 - [SQL Optimization](../optimization/sql-optimization-challenges.md)
-- [Performance Optimization](../../system-design/performance-optimization.md)
+- [Performance Optimization](../../System-Design/performance-optimization.md)
 
 ---
 
@@ -468,7 +466,7 @@ Each exercise includes:
 - **Explanation**: Key concepts and patterns demonstrated
 - **Cross-references**: Links to detailed concept documentation
 
-For additional practice, explore the [Netflix SQL Interview Problems](../../interviews/netflix/) which demonstrate these concepts in real-world scenarios.
+For additional practice, explore the [Netflix SQL Interview Problems](../../../interviews/netflix/README.md) which demonstrate these concepts in real-world scenarios.
 
 **Next Steps:**:
 
@@ -482,31 +480,6 @@ For additional practice, explore the [Netflix SQL Interview Problems](../../inte
 ## Wikibooks SQL Exercises
 
 This directory contains SQL exercises and examples adapted from [Wikibooks SQL tutorials](https://en.wikibooks.org/wiki/SQL_Exercises). Content focuses on practical SQL learning with hands-on exercises.
-
-## 📚 Content Overview
-
-### Exercise Categories
-
-#### [basic-sql](../) - *In Development*
-
-- SELECT statements and basic queries
-- Simple WHERE clauses and filtering
-- Basic aggregation functions
-- Simple JOIN operations
-
-#### [intermediate-joins](../joins/) - *In Development*
-
-- Multi-table JOIN patterns
-- Complex WHERE conditions
-- Subqueries introduction
-- Data relationship exercises
-
-#### [advanced-patterns](../advanced/) - *In Development*
-
-- Window functions practice
-- Common Table Expressions (CTEs)
-- Recursive queries
-- Performance optimization exercises
 
 ## 🎯 Exercise Structure
 
@@ -582,7 +555,3 @@ When adding new Wikibooks exercises:
 3. Provide multiple solution approaches where applicable
 4. Tag with relevant SQL concepts and difficulty level
 5. Cross-reference related main concepts
-
----
-
-*Navigate back to [SQL Extras](../README.md) | [SQL Concepts](../../README.md)*:

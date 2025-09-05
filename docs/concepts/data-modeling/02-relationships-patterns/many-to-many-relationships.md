@@ -155,7 +155,3 @@ CREATE TABLE genre_stats (
 * How do you handle referential integrity in distributed systems?
 * What are the trade-offs between different many-to-many modeling approaches?
 * How do you optimize for both OLTP updates and OLAP analytics?
-
----
-
-Navigate back to [Relationships & Patterns](./) | [Data Modeling Index](../README.md)

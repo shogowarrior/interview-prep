@@ -386,6 +386,4 @@ GROUP BY exp_id, variant, event_name, TUMBLE(event_timestamp, INTERVAL '5' MINUT
 
 - [System Architecture](system-architecture.md) - Platform architecture for experimentation
 - [Performance Optimization](performance-optimization.md) - Measuring performance impact
-- [Data Modeling Patterns](../data-modeling/) - Event tracking schemas
-
-Navigate back to [System Design & Advanced Concepts](README.md)
+- [Data Modeling Patterns](../Data-Modeling/README.md) - Event tracking schemas

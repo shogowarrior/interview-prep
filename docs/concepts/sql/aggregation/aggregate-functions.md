@@ -122,8 +122,8 @@ ORDER BY department, salary DESC;
 
 For comprehensive PostgreSQL window function coverage, see:
 
-- [`concepts/sql/window-functions/window-functions-overview.md`](../window-functions/window-functions-overview.md) - Complete PostgreSQL window functions guide
-- [`concepts/sql/window-functions/postgresql-ranking-functions.md`](../window-functions/postgresql-ranking-functions.md) - Ranking functions with examples
-- [`concepts/sql/window-functions/postgresql-navigation-functions.md`](../window-functions/postgresql-navigation-functions.md) - Navigation functions (LAG, LEAD, etc.)
-- [`concepts/sql/window-functions/postgresql-advanced-concepts.md`](../window-functions/postgresql-advanced-concepts.md) - Advanced concepts and performance
-- [`concepts/sql/window-functions/postgresql-interview-examples.md`](../window-functions/postgresql-interview-examples.md) - Interview-ready examples
+- [`concepts/SQL/window-functions/window-functions-overview.md`](../window-functions/window-functions-overview.md) - Complete PostgreSQL window functions guide
+- [`concepts/SQL/window-functions/postgresql-ranking-functions.md`](../window-functions/postgresql-ranking-functions.md) - Ranking functions with examples
+- [`concepts/SQL/window-functions/postgresql-navigation-functions.md`](../window-functions/postgresql-navigation-functions.md) - Navigation functions (LAG, LEAD, etc.)
+- [`concepts/SQL/window-functions/postgresql-advanced-concepts.md`](../window-functions/postgresql-advanced-concepts.md) - Advanced concepts and performance
+- [`concepts/SQL/window-functions/postgresql-interview-examples.md`](../window-functions/postgresql-interview-examples.md) - Interview-ready examples

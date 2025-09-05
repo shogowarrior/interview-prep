@@ -1,43 +1,35 @@
-# Data Modeling Concepts
+# Data Modeling Concepts for Streaming Services
 
-This comprehensive guide covers data modeling patterns and best practices for streaming platforms, with detailed examples and real-world implementations.
+This comprehensive guide covers data modeling patterns and best practices for streaming platforms, with detailed examples and real-world implementations suitable for technical interviews and production systems.
 
 ## 📚 Table of Contents
 
-### [Streaming-Services](Streaming-Services/README.md)
+### Core Entities for Streaming Platforms
 
-Comprehensive data modeling patterns for streaming platforms, including content catalog, user engagement metrics, subscription billing, A/B testing, and event streaming at massive scale.
+* **[Content Catalog Modeling](content-catalog.md)** - Titles, seasons, episodes, genres, localization
+* **[Accounts, Profiles & Devices](accounts-profiles-devices.md)** - User accounts, profiles, and device relationships
+* **[Subscriptions & Billing](subscriptions-billing.md)** - Subscription plans, billing cycles, and payment processing
 
-### [01-core-entities](01-core-entities/README.md)
+### Data Relationships & Features
 
-Fundamental entity design patterns for streaming platforms.
+* **[User Viewing History](user-viewing-history.md)** - Playback sessions, events, and resume states
+* **[Recommendations Storage](recommendations-storage.md)** - Similarity graphs, personalized recommendations
 
-* **[Content Catalog Modeling](01-core-entities/content-catalog-modeling.md)** - Movies, shows, seasons, episodes, genres, and localization
-* **[Accounts & Profiles](01-core-entities/accounts-profiles.md)** - User accounts, profiles, and device relationships
-* **[Subscriptions & Billing](01-core-entities/subscriptions-billing.md)** - Subscription plans, billing cycles, and payment processing
+### Analytics & Event Streaming
 
-### [02-relationships-patterns](02-relationships-patterns/README.md)
+* **[Engagement Metrics](engagement-metrics.md)** - DAU metrics and user engagement analysis
+* **[A/B Testing Data Models](ab-testing.md)** - Experiment metadata and outcome measurement
+* **[Streaming Quality Metrics](streaming-quality.md)** - Playback quality monitoring and buffering analysis
 
-Common relationship patterns and data modeling techniques.
+### Scalability & Advanced Patterns
 
-* **[Many-to-Many Relationships](02-relationships-patterns/many-to-many-relationships.md)** - Junction tables, bridge tables, and temporal relationships
-* **[User Viewing History](02-relationships-patterns/user-viewing-history.md)** - Playback sessions, granular events, and resume functionality
-* **[Recommendations Storage](02-relationships-patterns/recommendations-storage.md)** - Similarity graphs, personalized recommendations, and feature stores
+* **[Event Streaming at Scale](event-streaming-at-scale.md)** - Large-scale event processing and Bronze/Silver/Gold layers
+* **[Partitioning & Sharding](partitioning-sharding.md)** - Data distribution strategies for watch history
 
-### [03-event-streaming](03-event-streaming/README.md)
+### Additional Considerations
 
-Event-driven data models for real-time analytics and experimentation.
-
-* **[A/B Testing Data Models](03-event-streaming/ab-testing-data-models.md)** - Experiment metadata, user assignments, and outcome measurement
-* **[Engagement Metrics](03-event-streaming/engagement-metrics.md)** - Daily Active Users (DAU), event tracking, and user engagement analysis
-* **[Streaming Quality Metrics](03-event-streaming/streaming-quality-metrics.md)** - Playback quality monitoring, buffering analysis, and CDN performance
-
-### [04-scalability-patterns](04-scalability-patterns/README.md)
-
-Advanced patterns for handling massive scale and global distribution.
-
-* **[Event Streaming at Scale](04-scalability-patterns/event-streaming-at-scale.md)** - Large-scale event processing, Bronze/Silver/Gold layers, and real-time processing
-* **[Partitioning & Sharding](04-scalability-patterns/partitioning-sharding.md)** - Data distribution strategies, hot key management, and query optimization
+* **[Storage & Governance](additional-considerations.md)** - PII separation, slowly changing dimensions, data quality
+* **[Interview Practice](interview-practice-note.md)** - Practice scenarios and trade-offs
 
 ## 🎯 Key Design Principles
 
@@ -125,11 +117,11 @@ Advanced patterns for handling massive scale and global distribution.
 
 ## 📈 Learning Path
 
-1. **Start with Core Entities** - Understand fundamental data models
-2. **Master Relationships** - Learn advanced relationship patterns
-3. **Explore Event Streaming** - Understand real-time data patterns
-4. **Tackle Scalability** - Handle massive scale challenges
-5. **Apply to Real Problems** - Practice with interview questions
+1. **Core Entities** - Understand fundamental data models for streaming platforms
+2. **Relationships & Features** - Learn user behavior and recommendation patterns
+3. **Analytics & Streaming** - Master real-time metrics and experimentation
+4. **Scalability Patterns** - Handle massive scale with advanced partitioning
+5. **Additional Considerations** - Apply data governance and practice interviews
 
 ## 🎓 Best Practices
 
@@ -143,11 +135,11 @@ Advanced patterns for handling massive scale and global distribution.
 
 ## 🔗 Navigation
 
-* [⬅️ Back to Concepts Overview](../README.md)
-* [📊 SQL Concepts](../SQL/README.md)
-* [🏗️ System Design](../System-Design/README.md)
-* [🏢 Company Interview Prep](../../interviews/README.md)
+* [⬅️ Back to Data-Modeling Overview](../README.md)
+* [📊 SQL Concepts](../../SQL/README.md)
+* [🏗️ System Design](../../System-Design/README.md)
+* [🏢 Company Interview Prep](../../../interviews/README.md)
 
 ---
 
-**Note**: This unified data modeling guide combines concepts from streaming platform implementations with practical examples suitable for technical interviews and real-world applications.
+**Note**: This focused data modeling guide for streaming services combines patterns from major platforms with practical examples suitable for technical interviews and real-world applications.

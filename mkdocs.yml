@@ -36,7 +36,7 @@ theme:
     - search
     - content.code.copy
     - navigation.tabs
-    - navigation.sections
+    # - navigation.sections
     - navigation.instant
     - navigation.tracking
     - tabs.sticky
@@ -67,11 +67,11 @@ theme:
   nav:
     - Home: README.md
     - Concepts:
-        - SQL: concepts/sql/README.md
-        - Data Modeling: concepts/data-modeling/README.md
-        - System Design: concepts/system-design/README.md
-    - Interviews:
-        - Anthropic: interviews/Anthropic/anthropic-claude.md
-        - Netflix: interviews/netflix/README.md
-        - Nextdoor: interviews/nextdoor/comments.py
-        - Okareo: interviews/okareo/solution.py
+        - SQL: concepts/SQL/README.md
+        - Data Modeling: concepts/Data-Modeling/README.md
+        - System Design: concepts/System-Design/README.md
+    # - Interviews:
+    #     - Anthropic: interviews/Anthropic/anthropic-claude.md
+    #     - Netflix: interviews/netflix/README.md
+    #     - Nextdoor: interviews/nextdoor/comments.py
+    #     - Okareo: interviews/okareo/solution.py

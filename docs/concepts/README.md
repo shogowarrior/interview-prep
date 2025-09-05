@@ -16,12 +16,12 @@ The concepts directory serves as your central hub for mastering foundational tec
 
 Master database querying and analytics with comprehensive coverage from basic aggregation to advanced optimization techniques.
 
-#### [📊 SQL Learning Hub](sql/README.md)
+#### [📊 SQL Learning Hub](SQL/README.md)
 
-- **[Complete SQL Learning Path](sql/README.md)** - Structured progression from fundamentals to expert-level patterns
-- **[Practical Exercises](sql/extras/README.md)** - Hands-on practice with Wikibooks and TopTal challenges
-- **[Interview Problems](sql/problems/README.md)** - Netflix-specific SQL challenges with detailed solutions
-- **[Advanced Techniques](sql/window-functions/README.md)** - Window functions, CTEs, and complex analytics
+- **[Complete SQL Learning Path](SQL/README.md)** - Structured progression from fundamentals to expert-level patterns
+- **[Practical Exercises](SQL/extras/README.md)** - Hands-on practice with Wikibooks and TopTal challenges
+- **[Interview Problems](SQL/problems/README.md)** - Netflix-specific SQL challenges with detailed solutions
+- **[Advanced Techniques](SQL/window-functions/README.md)** - Window functions, CTEs, and complex analytics
 
 **Key Topics**: Aggregation, JOINs, window functions, CTEs, optimization, real-world analytics
 
@@ -31,12 +31,12 @@ Master database querying and analytics with comprehensive coverage from basic ag
 
 Learn database design principles and architectural patterns for building scalable data systems.
 
-#### [📋 Data Modeling Hub](data-modeling/README.md)
+#### [📋 Data Modeling Hub](Data-Modeling/README.md)
 
-- **[Core Entities](data-modeling/01-core-entities/README.md)** - User accounts, content catalogs, subscriptions, and billing systems
-- **[Relationship Patterns](data-modeling/02-relationships-patterns/README.md)** - Many-to-many relationships, user behavior tracking, and recommendations
-- **[Scalability Patterns](data-modeling/04-scalability-patterns/README.md)** - Partitioning, sharding, and large-scale data architectures
-- **[Event Streaming](data-modeling/03-event-streaming/README.md)** - Real-time data processing and quality metrics
+- **[Core Entities](Data-Modeling/01-core-entities/README.md)** - User accounts, content catalogs, subscriptions, and billing systems
+- **[Relationship Patterns](Data-Modeling/02-relationships-patterns/README.md)** - Many-to-many relationships, user behavior tracking, and recommendations
+- **[Scalability Patterns](Data-Modeling/04-scalability-patterns/README.md)** - Partitioning, sharding, and large-scale data architectures
+- **[Event Streaming](Data-Modeling/03-event-streaming/README.md)** - Real-time data processing and quality metrics
 
 **Key Topics**: Entity design, relationship modeling, scalability patterns, event-driven architectures
 
@@ -46,12 +46,12 @@ Learn database design principles and architectural patterns for building scalabl
 
 Master the principles of designing large-scale, distributed systems and architectures.
 
-#### [🏗️ System Design Hub](system-design/README.md)
+#### [🏗️ System Design Hub](System-Design/README.md)
 
-- **[System Architecture](system-design/system-architecture.md)** - Fundamental design patterns and architectural principles
-- **[Performance Optimization](system-design/performance-optimization.md)** - Scaling strategies and performance tuning
-- **[Case Studies](system-design/case-studies.md)** - Real-world system design examples and analysis
-- **[Experimentation](system-design/experimentation.md)** - A/B testing frameworks and experimental design
+- **[System Architecture](System-Design/system-architecture.md)** - Fundamental design patterns and architectural principles
+- **[Performance Optimization](System-Design/performance-optimization.md)** - Scaling strategies and performance tuning
+- **[Case Studies](System-Design/case-studies.md)** - Real-world system design examples and analysis
+- **[Experimentation](System-Design/experimentation.md)** - A/B testing frameworks and experimental design
 
 **Key Topics**: Distributed systems, scalability, performance, architectural patterns
 
@@ -103,13 +103,13 @@ Each concept area follows a structured learning progression:
 ## 📚 Additional Resources
 
 - [Company Interview Preparation](../interviews/README.md) - Industry-specific case studies and problems
-- [Netflix Data Modeling](../concepts/data-modeling/README.md) - Real-world applications
-- [SQL Performance Optimization](sql/optimization/sql-optimization-challenges.md) - Query tuning strategies
+- [Netflix Data Modeling](../concepts/Data-Modeling/README.md) - Real-world applications
+- [SQL Performance Optimization](SQL/optimization/sql-optimization-challenges.md) - Query tuning strategies
 
 ## 🔗 Navigation
 
 - [⬅️ Back to Main Repository](../README.md)
-- [📊 SQL Concepts Hub](sql/README.md)
-- [📋 Data Modeling Hub](data-modeling/README.md)
-- [🏢 System Design Hub](system-design/README.md)
+- [📊 SQL Concepts Hub](SQL/README.md)
+- [📋 Data Modeling Hub](Data-Modeling/README.md)
+- [🏢 System Design Hub](System-Design/README.md)
 - [🏢 Company Interview Prep](../interviews/README.md)

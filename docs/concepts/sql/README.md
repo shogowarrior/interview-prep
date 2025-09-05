@@ -152,7 +152,7 @@ graph TD
 
 1. [JOINs and Relationships](joins/page-impressions-analysis.md)
 2. [Subqueries](subqueries/subqueries.md)
-3. **[Wikibooks Window Functions Exercises](extras/wikibooks.md#intermediate-level-window-functions--ranking)** - Practice ranking and navigation functions
+3. **[Wikibooks Window Functions Exercises](extras/wikibooks.md#intermediate-level-window-functions-ranking)** - Practice ranking and navigation functions
 4. **[TopTal Intermediate Questions](extras/toptal.md#intermediate-level)** - Real-world ranking and analytics problems
 5. **Key Skills**: Multi-table queries, correlated subqueries, window functions, ranking
 
@@ -163,7 +163,7 @@ graph TD
 1. [CTEs Overview](cte/cte-vs-window-comparison.md)
 2. [Window Functions Overview](window-functions/window-functions-overview.md)
 3. [Ranking Problems](problems/02-ranking-window-functions/README.md)
-4. **[Wikibooks Advanced Patterns](extras/wikibooks.md#advanced-level-complex-patterns--optimization)** - CTEs, recursive queries, and percentile analysis
+4. **[Wikibooks Advanced Patterns](extras/wikibooks.md#advanced-level-complex-patterns-optimization)** - CTEs, recursive queries, and percentile analysis
 
 5. **[TopTal Advanced Questions](extras/toptal.md#advanced-level)** - Heavy watchers retention, content hierarchy, statistical functions
 
@@ -177,7 +177,7 @@ graph TD
 2. [Optimization Challenges](problems/optimization-challenges.md)
 3. **[TopTal Optimization Challenges](extras/toptal.md#optimization-challenges)** - Efficient DAU calculation, partitioning strategies, Top-N queries
 
-4. **[Wikibooks Optimization Exercises](extras/wikibooks.md#advanced-level-complex-patterns--optimization)** - Query performance optimization and indexing strategies
+4. **[Wikibooks Optimization Exercises](extras/wikibooks.md#advanced-level-complex-patterns-optimization)** - Query performance optimization and indexing strategies
 
 5. **Key Skills**: Recursive queries, performance tuning, large-scale optimization, indexing, partitioning
 
@@ -245,11 +245,11 @@ This SQL hub provides multiple pathways for skill development, from foundational
 |------------|-------------------|-------------------|------------------|----------|
 | **Basic Analytics** | [DAU, Retention, Content Analytics](extras/wikibooks.md#beginner-level-basic-analytics) | [User Metrics, Basic Aggregation](extras/toptal.md#beginner-level) | [Daily Active Users, Most Watched Show](problems/01-basic-analytics/README.md) | Building confidence with core SQL |
 
-| **Window Functions** | [Ranking, Navigation Functions](extras/wikibooks.md#intermediate-level-window-functions--ranking) | [Top-N, Consecutive Patterns](extras/toptal.md#intermediate-level) | [Top 3 Shows, Consecutive Days](problems/02-ranking-window-functions/README.md) | Mastering advanced analytics |
+| **Window Functions** | [Ranking, Navigation Functions](extras/wikibooks.md#intermediate-level-window-functions-ranking) | [Top-N, Consecutive Patterns](extras/toptal.md#intermediate-level) | [Top 3 Shows, Consecutive Days](problems/02-ranking-window-functions/README.md) | Mastering advanced analytics |
 
-| **CTEs & Complex Patterns** | [Heavy Watchers, Content Hierarchy](extras/wikibooks.md#advanced-level-complex-patterns--optimization) | [Retention Analysis, Recursive CTEs](extras/toptal.md#advanced-level) | [Advanced Patterns](problems/advanced-patterns.md) | Complex problem solving |
+| **CTEs & Complex Patterns** | [Heavy Watchers, Content Hierarchy](extras/wikibooks.md#advanced-level-complex-patterns-optimization) | [Retention Analysis, Recursive CTEs](extras/toptal.md#advanced-level) | [Advanced Patterns](problems/advanced-patterns.md) | Complex problem solving |
 
-| **Optimization** | [Query Performance, Indexing](extras/wikibooks.md#advanced-level-complex-patterns--optimization) | [Efficient DAU, Partitioning](extras/toptal.md#optimization-challenges) | [Optimization Challenges](problems/optimization-challenges.md) | Production-ready SQL |
+| **Optimization** | [Query Performance, Indexing](extras/wikibooks.md#advanced-level-complex-patterns-optimization) | [Efficient DAU, Partitioning](extras/toptal.md#optimization-challenges) | [Optimization Challenges](problems/optimization-challenges.md) | Production-ready SQL |
 
 ### **Recommended Learning Sequence**
 
@@ -288,8 +288,8 @@ This SQL hub provides multiple pathways for skill development, from foundational
 
 ### Related Learning Areas
 
-- **[Data Modeling](../data-modeling/README.md)** - Understanding database design patterns
-- **[Netflix Data Modeling](../data-modeling/README.md)** - Real-world applications
+- **[Data Modeling](../Data-Modeling/README.md)** - Understanding database design patterns
+- **[Netflix Data Modeling](../Data-Modeling/README.md)** - Real-world applications
 - **[Performance Optimization](problems/optimization-challenges.md)** - Query tuning strategies
 
 ### Practice & Exercise Collections
@@ -308,7 +308,7 @@ This SQL hub provides multiple pathways for skill development, from foundational
 ## 🔗 Navigation & Next Steps
 
 - [⬅️ **Back to Main Concepts**](../README.md)
-- [📊 **Next: Data Modeling Concepts**](../data-modeling/README.md)
+- [📊 **Next: Data Modeling Concepts**](../Data-Modeling/README.md)
 - [🏢 **Company Interview Prep**](../../interviews/README.md)
 - [🎯 **Start Learning: Aggregate Functions**](aggregation/aggregate-functions.md)
 - [📚 **Practice Exercises: Wikibooks Collection**](extras/wikibooks.md)

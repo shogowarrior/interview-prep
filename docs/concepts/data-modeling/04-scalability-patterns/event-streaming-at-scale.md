@@ -155,7 +155,3 @@ Key strategies:
 * How would you design event streaming for global infrastructure?
 * What are the trade-offs between different partitioning strategies?
 * How do you ensure data quality at scale?
-
----
-
-Navigate back to [Scalability Patterns](./) | [Data Modeling Index](../README.md)

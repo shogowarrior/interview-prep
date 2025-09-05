@@ -31,6 +31,6 @@ Real-world case studies and architectural decisions from engineering challenges 
 ## 🔗 Navigation
 
 - [⬅️ Back to Concepts Overview](../README.md)
-- [📊 SQL Concepts](../sql/)
-- [📋 Data Modeling](../data-modeling/)
-- [🏢 Company Interview Prep](../../companies/)
+- [📊 SQL Concepts](../SQL/README.md)
+- [📋 Data Modeling](../Data-Modeling/README.md)
+- [🏢 Company Interview Prep](../../interviews/README.md)

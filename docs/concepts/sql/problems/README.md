@@ -110,15 +110,9 @@ For a deeper understanding of SQL concepts, explore these related guides:
 
 ### Data Modeling
 
-- [`../../data-modeling/README.md`](../../data-modeling/README.md) - Data modeling principles
-- [`../../data-modeling/01-core-entities/README.md`](../../data-modeling/01-core-entities/README.md) - Core entity modeling
-- [`../../data-modeling/02-relationships-patterns/README.md`](../../data-modeling/02-relationships-patterns/README.md) - Relationship patterns
-
-### Company-Specific Problems
-
-- [`../../../interviews/netflix/`](../../../interviews/netflix/) - Netflix SQL interview problems
-- [`../../../interviews/netflix/README.md`](../../../interviews/netflix/README.md) - Netflix advanced patterns
-- [`../../../interviews/netflix/README.md`](../../../interviews/netflix/README.md) - Netflix optimization challenges
+- [`../../Data-Modeling/README.md`](../../Data-Modeling/README.md) - Data modeling principles
+- [`../../Data-Modeling/01-core-entities/README.md`](../../Data-Modeling/01-core-entities/README.md) - Core entity modeling
+- [`../../Data-Modeling/02-relationships-patterns/README.md`](../../Data-Modeling/02-relationships-patterns/README.md) - Relationship patterns
 
 ## Getting Started
 

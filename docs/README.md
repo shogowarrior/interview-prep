@@ -10,9 +10,9 @@ This repository serves as a comprehensive resource for interview preparation, fo
 
 The concepts directory offers structured guidance across three main technical domains:
 
-- [**SQL**](concepts/sql/README.md): Database querying, analytics, and performance optimization
-- [**Data Modeling**](concepts/data-modeling/README.md): Database design patterns and architectural principles
-- [**System Design**](concepts/system-design/README.md): Scalable system architecture and design patterns
+- [**SQL**](concepts/SQL/README.md): Database querying, analytics, and performance optimization
+- [**Data Modeling**](concepts/Data-Modeling/README.md): Database design patterns and architectural principles
+- [**System Design**](concepts/System-Design/README.md): Scalable system architecture and design patterns
 
 Each area includes progressive learning paths from fundamentals to advanced techniques, with practical exercises and real-world case studies.
 

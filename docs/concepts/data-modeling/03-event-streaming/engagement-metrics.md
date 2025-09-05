@@ -145,7 +145,3 @@ GROUP BY dt, region, profile_id;
 * How would you design a real-time DAU dashboard that handles scale?
 * What are the trade-offs between different event sampling strategies?
 * How do you ensure data quality and consistency across different app platforms?
-
----
-
-Navigate back to [Event Streaming](./) | [Data Modeling Index](../README.md)

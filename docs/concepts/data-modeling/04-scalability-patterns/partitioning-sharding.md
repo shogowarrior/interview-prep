@@ -219,7 +219,3 @@ ORDER BY dt
 * How would you choose partitioning keys for user watch history at scale?
 * What are the trade-offs between different sharding strategies?
 * How do you handle hot keys and data skew in a distributed system?
-
----
-
-Navigate back to [Scalability Patterns](./) | [Data Modeling Index](../README.md)

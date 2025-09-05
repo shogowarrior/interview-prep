@@ -296,7 +296,5 @@ WHERE status = 'active';
 **🔗 Cross-References:**:
 
 - [System Architecture](system-architecture.md) - Overall system design patterns
-- [Data Modeling Patterns](../data-modeling/) - Schema design for performance
-- [SQL Optimization](../sql/README.md) - Query-level optimizations
-
-Navigate back to [System Design & Advanced Concepts](README.md)
+- [Data Modeling Patterns](../Data-Modeling/README.md) - Schema design for performance
+- [SQL Optimization](../SQL/README.md) - Query-level optimizations

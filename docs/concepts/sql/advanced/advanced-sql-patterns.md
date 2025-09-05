@@ -705,9 +705,9 @@ For efficient analytics at Netflix scale:
 ## Cross-References
 
 - [Window Functions Overview](../window-functions/window-functions-overview.md)
-- [CTEs and Advanced Patterns](../cte/)
+- [CTEs and Advanced Patterns](../cte/README.md)
 - [SQL Optimization Challenges](../optimization/sql-optimization-challenges.md)
-- [Netflix Data Modeling](../../interviews/netflix/data-modeling/)
+- [Data Modeling](../../Data-Modeling/README.md)
 - [SQL Learning Path](../../README.md)
 
 Navigate back to [SQL Concepts](../README.md) | [Concepts Overview](../../README.md)

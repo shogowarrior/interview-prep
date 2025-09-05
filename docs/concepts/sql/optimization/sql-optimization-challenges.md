@@ -311,10 +311,10 @@ FIELDS TERMINATED BY ',';
 
 ## Cross-References
 
-- [Performance Optimization](../../system-design/performance-optimization.md)
+- [Performance Optimization](../../System-Design/performance-optimization.md)
 - [SQL Learning Path](../README.md)
 - [Advanced SQL Patterns](../advanced/advanced-sql-patterns.md)
-- [System Architecture](../../system-design/system-architecture.md)
+- [System Architecture](../../System-Design/system-architecture.md)
 
 ## Notes
 
