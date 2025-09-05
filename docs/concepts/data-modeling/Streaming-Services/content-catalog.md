@@ -1,4 +1,4 @@
-## 1) Content Catalog (titles, seasons, episodes, genres, localization)
+# Content Catalog (titles, seasons, episodes, genres, localization)
 
 **Core entities**:
 

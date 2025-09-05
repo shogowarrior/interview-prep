@@ -145,7 +145,7 @@ aggregate_function(expression) OVER (
 )
 ```
 
-**Key PostgreSQL Features:**:
+**Key PostgreSQL Features:**
 
 - **Any Aggregate Function**: `SUM()`, `AVG()`, `COUNT()`, `MIN()`, `MAX()`, `STDDEV()`, etc.
 - **Nested Aggregates**: `AVG(SUM(amount)) OVER ()` - aggregate of aggregate
@@ -220,7 +220,7 @@ FROM sales
 GROUP BY customer_id;
 ```
 
-**Expected PostgreSQL Optimizations:**:
+**Expected PostgreSQL Optimizations:**
 
 - **HashAggregate** for initial grouping
 - **WindowAgg** for window function computation

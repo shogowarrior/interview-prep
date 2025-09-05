@@ -5,7 +5,7 @@
 **Prompt:**  
 Given a list of function calls (enter/exit), reconstruct a valid stack trace.
 
-**Practice:**:
+**Practice:**
 
 - Stack data structure (push/pop logic)
 - Matching calls with exit order
@@ -21,7 +21,7 @@ Recursive traces, call stack mechanics, handling malformed sequences
 **Prompt:**  
 Implement sorting and data mutation logic across multiple steps. Handle edge cases, stability, and performance tradeoffs.
 
-**Practice:**:
+**Practice:**
 
 - Sorting algorithms (quicksort, mergesort, etc.)
 - Chained mutations (transform → filter → sort)
@@ -37,7 +37,7 @@ In-place vs out-of-place, Python’s `sorted()`, stability in sorting
 **Prompt:**  
 Build a web crawler. Start with synchronous crawling, evolve to asynchronous with concurrency.
 
-**Practice:**:
+**Practice:**
 
 - Sync: `requests` + `BeautifulSoup`
 - Async: `aiohttp` + `asyncio` + rate limiting
@@ -53,7 +53,7 @@ Async patterns in Python, producer-consumer, BFS/DFS crawling
 **Prompt:**  
 Design a system to handle multiple user questions in a single GPT/Claude chat thread.
 
-**Practice:**:
+**Practice:**
 
 - Thread/session state management
 - Concurrent request handling
@@ -69,7 +69,7 @@ Message queues, chat memory, stateless vs stateful architecture
 **Prompt:**  
 Design a file system or in-memory data store with operations like set, get, filter, backup, and restore.
 
-**Practice:**:
+**Practice:**
 
 - In-memory structure (dict-based)
 - Backup/versioning logic
@@ -90,7 +90,7 @@ Design a banking system that evolves in stages:
 - Scheduled/cancelable transactions
 - Account merging while preserving history
 
-**Practice:**:
+**Practice:**
 
 - Ledger and transaction classes
 - Priority queues for ranking
@@ -112,7 +112,7 @@ Implement a small in-memory CRUD application:
 - Track time-in/out or grades
 - Support unusual/complex operations
 
-**Practice:**:
+**Practice:**
 
 - OOP class models and relationships
 - Data validation and constraints
@@ -128,7 +128,7 @@ Data modeling, edge case design, object state transitions
 **Prompt:**  
 What would you do if AI started to feel sad?
 
-**Practice:**:
+**Practice:**
 
 - Reason through emotional simulation
 - Address anthropomorphism

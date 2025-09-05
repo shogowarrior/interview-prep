@@ -140,7 +140,7 @@ WHERE total_sales > overall_avg_sales
 ORDER BY total_sales DESC;
 ```
 
-**PostgreSQL Advantages:**:
+**PostgreSQL Advantages:**
 
 * **Named Windows**: Avoid repetition and improve readability
 * **Performance**: Optimized execution plans for window functions

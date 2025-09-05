@@ -1,4 +1,4 @@
-## 5) Subscriptions, Billing, Promotions, Payments
+# Subscriptions, Billing, Promotions, Payments
 
 **Concepts**:
 

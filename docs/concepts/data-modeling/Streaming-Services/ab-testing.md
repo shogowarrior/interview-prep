@@ -1,4 +1,4 @@
-## 7) A/B Testing (experiments, assignments, outcomes)
+# A/B Testing (experiments, assignments, outcomes)
 
 ```sql
 CREATE TABLE experiment (

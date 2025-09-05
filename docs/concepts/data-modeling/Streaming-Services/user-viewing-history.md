@@ -1,4 +1,4 @@
-## 2) User Viewing History (partial watch, multiple devices, resume)
+# User Viewing History (partial watch, multiple devices, resume)
 
 **Concepts**:
 

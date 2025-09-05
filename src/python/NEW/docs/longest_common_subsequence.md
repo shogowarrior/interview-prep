@@ -16,7 +16,6 @@ Output: 3
 
 **Explanation**: The longest common subsequence is "ace" and its length is 3.
 
-
 ## Example 2
 
 ```python

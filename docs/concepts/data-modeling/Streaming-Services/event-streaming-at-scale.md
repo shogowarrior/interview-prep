@@ -1,4 +1,4 @@
-## 9) Event Streaming @ scale (schema, processing, queryability)
+# Event Streaming @ scale (schema, processing, queryability)
 
 **Ingestion design**:
 

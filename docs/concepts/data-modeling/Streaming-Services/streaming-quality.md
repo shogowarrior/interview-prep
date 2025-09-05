@@ -1,4 +1,4 @@
-## 8) Streaming Quality (bitrate, buffering, errors)
+# Streaming Quality (bitrate, buffering, errors)
 
 **Granular**:
 

@@ -1,4 +1,4 @@
-## 6) Engagement Metrics (DAU by region)
+# Engagement Metrics (DAU by region)
 
 **Ingest**:
 

@@ -1,4 +1,4 @@
-## 3) Recommendations storage (relationships & features)
+# Recommendations storage (relationships & features)
 
 **Layers**:
 

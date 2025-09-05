@@ -18,11 +18,11 @@ This comprehensive guide covers SQL interview questions specifically tailored fo
 
 ### 1 Daily Active Users (DAU)
 
-***Business Context: DAU***:
+**Business Context:**
 
      User engagement metrics for streaming platforms.
 
-***Question***:
+**Question:**
 
      You have a table `user_activity`:
 
@@ -35,7 +35,7 @@ This comprehensive guide covers SQL interview questions specifically tailored fo
 
      Write a query to find the number of **unique active users per day**.
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT
@@ -46,29 +46,29 @@ GROUP BY activity_date
 ORDER BY activity_date;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
     - Basic aggregation with `COUNT(DISTINCT)`
     - Grouping data by date
     - Understanding user activity metrics
 
-***Related Concepts***:
+**Cross-references:**
 
- [`aggregation-functions.md`](../aggregation/aggregate-functions.md)
+- [`aggregation functions`](../aggregation/aggregate-functions.md)
 
 ---
 
 ### 2 Day-1 Retention
 
-***Business Context***:
+**Business Context:**
 
      User retention analysis for subscription services.
 
-***Question***:
+**Question:**
 
      From `user_signup(user_id, signup_date)` and `user_activity(user_id, activity_date)`, calculate **Day-1 retention** (users who signed up on Day X and came back on Day X+1).
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT
@@ -80,7 +80,8 @@ LEFT JOIN user_activity a
     AND a.activity_date = DATE_ADD(s.signup_date, INTERVAL 1 DAY)
 GROUP BY s.signup_date;
 ```
-***Learning Objectives***:
+
+**Learning Objectives:**
 
      - Cohort analysis patterns
 
@@ -88,18 +89,20 @@ GROUP BY s.signup_date;
 
      - Understanding retention metrics
 
-***Related Concepts***:
+**Cross-references:**
 
- [`joins.md`](../joins/README.md), [`aggregation-functions.md`](../aggregation/aggregate-functions.md)
+- [`joins`](../joins/README.md)
+- [`aggregation functions`](../aggregation/aggregate-functions.md)
 
 ## Intermediate Level
+
 ### 3 Most Watched Show per Day
 
-***Business Context***:
+**Business Context:**
 
      Content popularity analysis.
 
-***Question***:
+**Question:**
 
      Table `watch_history`:
 
@@ -111,7 +114,7 @@ GROUP BY s.signup_date;
 
      Find the **most watched show per day** (based on total minutes).
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT watch_date, show_id
@@ -127,29 +130,30 @@ FROM (
 WHERE rnk = 1;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
     - Window functions for ranking
     - Subquery patterns
     - Top-N per category problems
 
-***Related Concepts***:
+**Cross-references:**
 
- [`window-functions-overview.md`](../window-functions/window-functions-overview.md), [`ranking-functions.md`](../window-functions/postgresql-ranking-functions.md)
+- [`window functions overview`](../window-functions/window-functions-overview.md)
+- [`postgresql ranking functions`](../window-functions/postgresql-ranking-functions.md)
 
 ---
 
 ### 4 Top 3 Shows per Region
 
-***Business Context***:
+**Business Context:**
 
-     Regional content performance analysis.
+    Regional content performance analysis.
 
-***Question***:
+**Question:**
 
      Table `viewership(user_id, show_id, region, watch_time)`. Find the **top 3 most watched shows per region** by total minutes.
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT region, show_id, total_watch_time
@@ -165,29 +169,30 @@ FROM (
 WHERE rnk <= 3;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
     - Difference between RANK() and DENSE_RANK()
     - Multi-level partitioning
     - Top-N queries per category
 
-***Related Concepts***:
+**Cross-references:**
 
- [`window-functions-overview.md`](../window-functions/window-functions-overview.md), [`ranking-functions.md`](../window-functions/postgresql-ranking-functions.md)
+- [`window functions overview`](../window-functions/window-functions-overview.md)
+- [`postgresql ranking functions`](../window-functions/postgresql-ranking-functions.md)
 
 ---
 
 ### 5 Consecutive Days Watching
 
-***Business Context***:
+**Business Context:**
 
      User engagement streak analysis.
 
-***Question***:
+**Question:**
 
      From `user_activity(user_id, activity_date)`, find users who have watched content for **3 consecutive days**.
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT DISTINCT user_id
@@ -203,29 +208,30 @@ WHERE DATEDIFF(activity_date, prev_day) = 1
 AND DATEDIFF(prev_day, prev2_day) = 1;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
     - Using LAG() for sequential analysis
     - Date arithmetic in SQL
     - Streak detection patterns
 
-***Related Concepts***:
+**Cross-references:**
 
- [`navigation-functions.md`](../window-functions/postgresql-navigation-functions.md), [`window-functions-overview.md`](../window-functions/window-functions-overview.md)
+- [`postgresql navigation functions`](../window-functions/postgresql-navigation-functions.md)
+- [`window functions overview`](../window-functions/window-functions-overview.md)
 
 ## Advanced Level
 
 ### 6 Heavy Watchers Retention (CTE)
 
-***Business Context***:
+**Business Context:**
 
 Advanced user segmentation and retention.
 
-***Question***:
+**Question:**
 
 Find users who watched >100 minutes in a day, and then find how many of them watched again the next day.
 
-***Solution***:
+**Solution:**
 
 ```sql
 WITH daily_watch AS (
@@ -248,29 +254,29 @@ JOIN heavy_watchers h2
     AND h2.watch_date = DATE_ADD(h1.watch_date, INTERVAL 1 DAY);
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
 - Common Table Expressions (CTEs)
 - Multi-step data transformation
 - Advanced retention analysis
 
-***Related Concepts***:
+**Cross-references:**
 
- [`cte-overview.md`](../cte/README.md)
+- [`cte overview`](../cte/README.md)
 
 ---
 
 ### 7 Content Hierarchy (Recursive CTE)
 
-***Business Context***:
+**Business Context:**
 
 Managing hierarchical content structures.
 
-***Question***:
+**Question:**
 
 Model content hierarchy (seasons, episodes) using recursive CTEs.
 
-***Solution***:
+**Solution:**
 
 ```sql
 WITH RECURSIVE content_hierarchy AS (
@@ -299,29 +305,29 @@ WITH RECURSIVE content_hierarchy AS (
 SELECT * FROM content_hierarchy ORDER BY path;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
 - Recursive CTE patterns
 - Hierarchical data modeling
 - Tree traversal in SQL
 
-***Related Concepts***:
+**Cross-references:**
 
- [`cte-overview.md`](../cte/README.md)
+- [`cte overview`](../cte/README.md)
 
 ---
 
 ### 8 Percentile Analysis
 
-***Business Context***:
+**Business Context:**
 
 Statistical analysis of user behavior.
 
-***Question***:
+**Question:**
 
 Find the top 1% of users by total watch time.
 
-***Solution***:
+**Solution:**
 
 ```sql
 WITH user_totals AS (
@@ -343,29 +349,29 @@ FROM ranked
 WHERE pct_rank <= 0.01;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
 - Statistical functions in SQL
 - Percentile calculations
 - User segmentation
 
-***Related Concepts***:
+**Cross-references:**
 
- [`advanced-window-functions.md`](../window-functions/postgresql-advanced-concepts.md)
+- [`postgresql advanced concepts`](../window-functions/postgresql-advanced-concepts.md)
 
 ---
 
 ### 9 Recommendation Acceptance Rate
 
-***Business Context***:
+**Business Context:**
 
 Measuring recommendation system effectiveness.
 
-***Question***:
+**Question:**
 
 Measure how many recommended shows were actually watched.
 
-***Solution***:
+**Solution:**
 
 ```sql
 SELECT
@@ -378,26 +384,29 @@ LEFT JOIN watch_events w
     AND w.event_ts BETWEEN r.recommendation_ts
                          AND r.recommendation_ts + INTERVAL '24' HOUR;
 ```
-***Learning Objectives***:
 
- - Complex join conditions with time windows
+**Learning Objectives:**
 
- - Conditional aggregation
+- Complex join conditions with time windows
 
- - A/B testing analysis patterns
+- Conditional aggregation
 
-***Related Concepts***:
+- A/B testing analysis patterns
 
- [`joins.md`](../joins/README.md), [`aggregation-functions.md`](../aggregation/aggregate-functions.md)
+**Cross-references:**
+
+- [`joins`](../joins/README.md)
+- [`aggregation functions`](../aggregation/aggregate-functions.md)
 
 ## Optimization Challenges
+
 ### 10 Efficient DAU Calculation
 
-***Business Context***:
+**Business Context:**
 
 Performance optimization for large-scale analytics.
 
-***Question***:
+**Question:**
 
 Optimizing daily active users query for large datasets.
 
@@ -429,23 +438,23 @@ GROUP BY DATE(event_ts);
 - Approximate vs exact calculations
 - Date range filtering
 
-***Related Concepts***:
+**Cross-references:**
 
- [`sql-optimization-challenges.md`](../optimization/sql-optimization-challenges.md)
+- [`sql optimization challenges`](../optimization/sql-optimization-challenges.md)
 
 ---
 
 ### 11 Time-based Partitioning
 
-***Business Context***:
+**Business Context:**
 
 Database design for time-series data.
 
-***Question***:
+**Question:**
 
 Optimizing for time-series queries with partitioning.
 
-***Solution***:
+**Solution:**
 
 ```sql
 -- Partition by day for efficient date range queries
@@ -465,29 +474,29 @@ WHERE event_ts >= '2025-01-01'
     AND event_ts < '2025-02-01';
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
 - Database partitioning strategies
 - Partition pruning
 - Schema design for analytics
 
-***Related Concepts***:
+**Cross-references:**
 
- [`partitioning-sharding.md`](../../Data-Modeling/04-scalability-patterns/partitioning-sharding.md)
+- [`partitioning sharding`](../../Data-Modeling/04-scalability-patterns/partitioning-sharding.md)
 
 ---
 
 ### 12 Efficient Top-N Queries
 
-***Business Context***:
+**Business Context:**
 
 Performance optimization for ranking queries.
 
-***Question***:
+**Question:**
 
 Optimizing ranking queries with large datasets.
 
-***Solution***:
+**Solution:**
 
 ```sql
 -- Use LIMIT with proper ordering for Top-N
@@ -509,26 +518,26 @@ FROM watch_events
 GROUP BY DATE(event_ts), show_id;
 ```
 
-***Learning Objectives***:
+**Learning Objectives:**
 
 - LIMIT clause optimization
 - Materialized views
 - Pre-aggregation strategies
 
-***Related Concepts***:
+**Cross-references:**
 
- [`sql-optimization-challenges.md`](../optimization/sql-optimization-challenges.md)
+- [`sql optimization challenges`](../optimization/sql-optimization-challenges.md)
 
 ## Cross-References
 
 ### Main SQL Concepts Covered
 
-- **Aggregation Functions**: [`aggregation-functions.md`](../aggregation/aggregate-functions.md)
-- **Window Functions**: [`window-functions-overview.md`](../window-functions/window-functions-overview.md)
-- **Common Table Expressions**: [`cte-overview.md`](../cte/README.md)
-- **Joins**: [`joins.md`](../joins/README.md)
-- **Subqueries**: [`subqueries.md`](../subqueries/subqueries.md)
-- **Optimization**: [`sql-optimization-challenges.md`](../optimization/sql-optimization-challenges.md)
+- **Aggregation Functions**: [`aggregation functions`](../aggregation/aggregate-functions.md)
+- **Window Functions**: [`window functions overview`](../window-functions/window-functions-overview.md)
+- **Common Table Expressions**: [`cte overview`](../cte/README.md)
+- **Joins**: [`joins`](../joins/README.md)
+- **Subqueries**: [`subqueries`](../subqueries/subqueries.md)
+- **Optimization**: [`sql optimization challenges`](../optimization/sql-optimization-challenges.md)
 
 ### Business Domains
 
@@ -570,7 +579,7 @@ Each interview question follows this format:
 
 Real-world business scenario requiring SQL solution
 
-***Business Context***:
+**Business Context:**
 
 - **Company**: Tech startup, e-commerce, SaaS platform
 - **Data Scale**: Millions of users, billions of events

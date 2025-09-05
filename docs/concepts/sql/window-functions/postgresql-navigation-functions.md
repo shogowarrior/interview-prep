@@ -17,7 +17,7 @@ LAG(expression [, offset [, default_value]]) OVER (
 )
 ```
 
-**Parameters:**:
+**Parameters:**
 
 - `expression`: The column/expression to retrieve
 - `offset`: How many rows back (default: 1)
@@ -109,7 +109,7 @@ FROM monthly_sales
 ORDER BY product_name, sale_date;
 ```
 
-**Results:**:
+**Results:**
 
 | product_name | sale_date  | sales_amount | prev_month_sales | growth_percentage |
 |--------------|------------|--------------|------------------|-------------------|

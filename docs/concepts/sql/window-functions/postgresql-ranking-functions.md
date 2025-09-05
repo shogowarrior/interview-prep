@@ -17,7 +17,7 @@ ROW_NUMBER() OVER (
 )
 ```
 
-**Key Characteristics:**:
+**Key Characteristics:**
 
 - No gaps in numbering
 - Different values for tied rows
@@ -34,7 +34,7 @@ RANK() OVER (
 )
 ```
 
-**Key Characteristics:**:
+**Key Characteristics:**
 
 - Same rank for tied values
 - Gaps in ranking sequence (e.g., 1, 2, 2, 4, ...)
@@ -51,7 +51,7 @@ DENSE_RANK() OVER (
 )
 ```
 
-**Key Characteristics:**:
+**Key Characteristics:**
 
 - Same rank for tied values
 - No gaps in ranking sequence (e.g., 1, 2, 2, 3, 4, ...)
@@ -132,7 +132,7 @@ FROM employees
 ORDER BY salary DESC;
 ```
 
-**Expected Results:**:
+**Expected Results:**
 
 | name   | department | salary | overall_row_num | overall_rank | overall_dense_rank | dept_row_num | dept_rank | overall_percentile | salary_quartile |
 |--------|------------|--------|-----------------|--------------|-------------------|--------------|-----------|-------------------|------------------|

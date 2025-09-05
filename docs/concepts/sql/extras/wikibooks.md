@@ -5,8 +5,8 @@ A comprehensive collection of SQL exercises organized by difficulty level, desig
 ## Table of Contents
 
 - [Beginner Level: Basic Analytics](#beginner-level-basic-analytics)
-- [Intermediate Level Window Functions & Ranking](#intermediate-level-window-functions-ranking)
-- [Advanced Level: Complex Patterns & Optimization](#advanced-level-complex-patterns-optimization)
+- [Intermediate Level Window Functions and Ranking](#intermediate-level-window-functions-and-ranking)
+- [Advanced Level Complex Patterns and Optimization](#advanced-level-complex-patterns-and-optimization)
 
 ---
 
@@ -16,7 +16,7 @@ Exercises focusing on fundamental SQL operations including aggregation, grouping
 
 ### 1. Daily Active Users (DAU)
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Understand basic aggregation with `COUNT DISTINCT`
 - Practice `GROUP BY` with date-based grouping
@@ -34,7 +34,7 @@ You have a table `user_activity`:
 
 Write a query to find the number of **unique active users per day**.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 SELECT
@@ -45,20 +45,20 @@ GROUP BY activity_date
 ORDER BY activity_date;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Groups by day and counts distinct users
 - Basic aggregation pattern for DAU calculation
 - Common Netflix interview question for analytics basics
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Aggregate Functions](../aggregation/aggregate-functions.md)
 - [SQL Concepts Overview](../README.md#core-sql-fundamentals)
 
 ### 2. Day-1 Retention
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Practice self-joins with date arithmetic
 - Calculate retention metrics using percentages
@@ -67,7 +67,7 @@ ORDER BY activity_date;
 **Question:**  
 From `user_signup(user_id, signup_date)` and `user_activity(user_id, activity_date)`, calculate **Day-1 retention** (users who signed up on Day X and came back on Day X+1).
 
-**Solution:**:
+**Solution:**
 
 ```sql
 SELECT
@@ -80,21 +80,21 @@ LEFT JOIN user_activity a
 GROUP BY s.signup_date;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Numerator: users active next day after signup
 - Denominator: total signups for that day
 - Uses `LEFT JOIN` with date filtering for the retention logic
 - Common cohort analysis pattern in user analytics
 
-**Cross-references:**:
+**Cross-references:**
 
 - [JOINs and Relationships](../joins/README.md)
 - [Aggregate Functions](../aggregation/aggregate-functions.md)
 
 ### 3. Most Watched Show per Day
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Implement ranking without window functions
 - Practice subqueries for top-N queries
@@ -111,7 +111,7 @@ Table `watch_history`:
 
 Find the **most watched show per day** (based on total minutes).
 
-**Solution:**:
+**Solution:**
 
 ```sql
 SELECT watch_date, show_id
@@ -127,26 +127,26 @@ FROM (
 WHERE rnk = 1;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Uses window function `RANK()` to find the top show per day
 - Groups by date and show first, then ranks within each date
 - Basic ranking pattern for top-N per category problems
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Window Functions](../window-functions/README.md)
 - [Aggregate Functions](../aggregation/aggregate-functions.md)
 
 ---
 
-## Intermediate Level Window Functions & Ranking
+## Intermediate Level Window Functions and Ranking
 
 Exercises focusing on advanced analytics using window functions, ranking, and navigation functions.
 
 ### 4. Top 3 Shows per Region
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Master `DENSE_RANK()` vs `RANK()` functions
 - Practice partitioning for grouped rankings
@@ -156,7 +156,7 @@ Exercises focusing on advanced analytics using window functions, ranking, and na
 Table `viewership(user_id, show_id, region, watch_time)`.  
 Find the **top 3 most watched shows per region** by total minutes.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 SELECT region, show_id, total_watch_time
@@ -172,21 +172,21 @@ FROM (
 WHERE rnk <= 3;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Uses `DENSE_RANK()` for ranking within each region
 - `DENSE_RANK()` vs `RANK()`: no gaps in ranking (1,2,2,3 vs 1,2,2,4)
 - Groups by region and show first, then applies ranking window function
 - Common pattern for "top N per category" problems
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Ranking Functions](../window-functions/postgresql-ranking-functions.md)
 - [Window Functions Overview](../window-functions/window-functions-overview.md)
 
 ### 5. Consecutive Days Watching
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Use navigation functions (`LAG`/`LEAD`) for pattern detection
 - Implement streak analysis with window functions
@@ -195,7 +195,7 @@ WHERE rnk <= 3;
 **Question:**  
 From `user_activity(user_id, activity_date)`, find users who have watched content for **3 consecutive days**.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 SELECT DISTINCT user_id
@@ -211,27 +211,27 @@ WHERE DATEDIFF(activity_date, prev_day) = 1
   AND DATEDIFF(prev_day, prev2_day) = 1;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Uses `LAG()` window function to look back at previous activity dates
 - `DATEDIFF()` checks for consecutive days (difference = 1)
 - Alternative approach: use `ROW_NUMBER()` and date arithmetic for more complex streak detection
 - Common pattern for "consecutive days" or "streak" problems
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Navigation Functions](../window-functions/postgresql-navigation-functions.md)
 - [Common Table Expressions (CTEs)](../cte/README.md)
 
 ---
 
-## Advanced Level Complex Patterns & Optimization
+## Advanced Level Complex Patterns and Optimization
 
 Exercises covering advanced SQL patterns including CTEs, recursive queries, and performance optimization techniques.
 
 ### 6. Heavy Watchers Retention (CTEs)
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Build multi-step analysis using CTEs
 - Implement complex retention calculations
@@ -240,7 +240,7 @@ Exercises covering advanced SQL patterns including CTEs, recursive queries, and 
 **Question:**  
 Find users who watched >100 minutes in a day, and then find how many of them watched again the next day.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 WITH daily_watch AS (
@@ -263,7 +263,7 @@ JOIN heavy_watchers h2
   AND h2.watch_date = DATE_ADD(h1.watch_date, INTERVAL 1 DAY);
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Uses CTEs to break down the problem into logical steps
 - First CTE calculates daily watch time per user
@@ -271,14 +271,14 @@ JOIN heavy_watchers h2
 - Final query joins to find retention
 - CTEs improve readability and allow step-by-step problem solving
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Common Table Expressions (CTEs)](../cte/README.md)
 - [CTE vs Window Functions](../cte/cte-vs-window-comparison.md)
 
 ### 7. Content Hierarchy (Recursive CTEs)
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Implement recursive CTEs for hierarchical data
 - Understand tree-like data structures in SQL
@@ -287,7 +287,7 @@ JOIN heavy_watchers h2
 **Question:**  
 Model content hierarchy (seasons, episodes) using recursive CTEs.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 WITH RECURSIVE content_hierarchy AS (
@@ -316,21 +316,21 @@ WITH RECURSIVE content_hierarchy AS (
 SELECT * FROM content_hierarchy ORDER BY path;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Recursive CTE handles hierarchical or tree-like data structures
 - Base case starts with root content (no parent)
 - Recursive case builds the hierarchy level by level
 - Generates path and level information for each item
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Common Table Expressions (CTEs)](../cte/README.md)
 - [Vacant Days Analysis](../cte/vacant-days-detailed.md)
 
 ### 8. Percentile Analysis (Advanced Window Functions)
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Use statistical window functions like `PERCENT_RANK()`
 - Implement percentile-based user segmentation
@@ -339,7 +339,7 @@ SELECT * FROM content_hierarchy ORDER BY path;
 **Question:**
 Find the top 1% of users by total watch time.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 WITH user_totals AS (
@@ -361,20 +361,20 @@ FROM ranked
 WHERE pct_rank <= 0.01;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - `PERCENT_RANK()` enables statistical analysis
 - Identifies top percentage of users by any metric
 - Useful for user segmentation and targeting
 
-**Cross-references:**:
+**Cross-references:**
 
 - [Advanced Concepts](../window-functions/postgresql-advanced-concepts.md)
 - [Window Functions Overview](../window-functions/window-functions-overview.md)
 
 ### 9. Query Performance Optimization
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Optimize queries for large datasets
 - Use approximate functions for performance
@@ -383,7 +383,7 @@ WHERE pct_rank <= 0.01;
 **Question:**  
 Optimizing daily active users query for large datasets.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 -- Optimized version with proper partitioning
@@ -405,20 +405,20 @@ WHERE event_ts >= CURRENT_DATE - INTERVAL '30' DAY
 GROUP BY DATE(event_ts);
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Date range filtering reduces data scanned
 - `APPROX_COUNT_DISTINCT()` trades accuracy for performance
 - Partitioning by date enables efficient queries
 
-**Cross-references:**:
+**Cross-references:**
 
 - [SQL Optimization](../optimization/sql-optimization-challenges.md)
 - [Advanced SQL Patterns](../advanced/advanced-sql-patterns.md)
 
 ### 10. Indexing Strategy
 
-**Learning Objectives:**:
+**Learning Objectives:**
 
 - Design composite indexes for query patterns
 - Understand covering indexes vs regular indexes
@@ -428,7 +428,7 @@ GROUP BY DATE(event_ts);
 
 Key indexes for common Netflix query patterns.
 
-**Solution:**:
+**Solution:**
 
 ```sql
 -- Composite index for user activity queries
@@ -442,13 +442,13 @@ CREATE INDEX idx_recent_activity ON watch_events (user_id, event_ts)
 WHERE event_ts >= CURRENT_DATE - INTERVAL '90' DAY;
 ```
 
-**Explanation:**:
+**Explanation:**
 
 - Composite indexes optimize multi-column queries
 - Covering indexes avoid table lookups
 - Partial indexes reduce index size for filtered data
 
-**Cross-references:**:
+**Cross-references:**
 
 - [SQL Optimization](../optimization/sql-optimization-challenges.md)
 - [Performance Optimization](../../System-Design/performance-optimization.md)
@@ -461,14 +461,14 @@ Start with **Beginner Level** exercises to build confidence with basic SQL opera
 
 Each exercise includes:
 
-- **Learning Objectives**: What you'll master
-- **Solution**: Complete SQL code with best practices
-- **Explanation**: Key concepts and patterns demonstrated
-- **Cross-references**: Links to detailed concept documentation
+- **Learning Objectives:** What you'll master
+- **Solution:** Complete SQL code with best practices
+- **Explanation:** Key concepts and patterns demonstrated
+- **Cross-references:** Links to detailed concept documentation
 
 For additional practice, explore the [Netflix SQL Interview Problems](../../../interviews/netflix/README.md) which demonstrate these concepts in real-world scenarios.
 
-**Next Steps:**:
+**Next Steps:**
 
 - [SQL Concepts Overview](../README.md)
 - [Aggregate Functions](../aggregation/aggregate-functions.md)

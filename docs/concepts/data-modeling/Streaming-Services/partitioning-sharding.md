@@ -1,4 +1,4 @@
-## 10) Partitioning & Sharding user watch history
+# Partitioning & Sharding user watch history
 
 **Goal**:
 
@@ -24,3 +24,4 @@
 
 * Over-partitioning (`dt`, `hour`, `region`) → too many small files. Prefer `dt` + clustering; run optimize/compaction jobs.
 * Using `profile_id` as shard key complicates account-level queries; mitigate via secondary indexes/materialized views.
+  

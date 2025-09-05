@@ -26,11 +26,6 @@ This comprehensive guide covers data modeling patterns and best practices for st
 * **[Event Streaming at Scale](event-streaming-at-scale.md)** - Large-scale event processing and Bronze/Silver/Gold layers
 * **[Partitioning & Sharding](partitioning-sharding.md)** - Data distribution strategies for watch history
 
-### Additional Considerations
-
-* **[Storage & Governance](additional-considerations.md)** - PII separation, slowly changing dimensions, data quality
-* **[Interview Practice](interview-practice-note.md)** - Practice scenarios and trade-offs
-
 ## 🎯 Key Design Principles
 
 ### Data Architecture Patterns

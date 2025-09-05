@@ -16,7 +16,7 @@ Window frames define which rows are included in the calculation for each row. Po
 ROWS frame_extent
 ```
 
-**Frame Extents:**:
+**Frame Extents:**
 
 - `UNBOUNDED PRECEDING` - All rows from partition start to current row
 - `n PRECEDING` - n rows before current row
@@ -24,7 +24,7 @@ ROWS frame_extent
 - `n FOLLOWING` - n rows after current row
 - `UNBOUNDED FOLLOWING` - All rows from current row to partition end
 
-**Examples:**:
+**Examples:**
 
 ```sql
 -- Last 3 rows including current
@@ -43,7 +43,7 @@ ROWS BETWEEN UNBOUNDED PRECEDING AND UNBOUNDED FOLLOWING
 RANGE frame_extent
 ```
 
-**Frame Extents (with ORDER BY required):**:
+**Frame Extents (with ORDER BY required):**
 
 - `UNBOUNDED PRECEDING` - All rows with values <= current row's value
 - `n PRECEDING` - Rows with values in range [current - n, current]
@@ -51,7 +51,7 @@ RANGE frame_extent
 - `n FOLLOWING` - Rows with values in range [current, current + n]
 - `UNBOUNDED FOLLOWING` - All rows with values >= current row's value
 
-**Examples:**:
+**Examples:**
 
 ```sql
 -- All rows with same or smaller ORDER BY value
@@ -67,7 +67,7 @@ RANGE BETWEEN 5 PRECEDING AND 5 FOLLOWING
 GROUPS frame_extent
 ```
 
-**Frame Extents:**:
+**Frame Extents:**
 
 - `UNBOUNDED PRECEDING` - All peer groups from start to current
 - `n PRECEDING` - n peer groups before current group

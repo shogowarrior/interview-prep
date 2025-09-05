@@ -1,4 +1,4 @@
-## 4) Accounts, Profiles, Devices
+# Accounts, Profiles, Devices
 
 ```sql
 CREATE TABLE account (
@@ -34,4 +34,4 @@ CREATE TABLE profile_device_link (
 **Notes**:
 
 * Device belongs to account; link to profiles many-to-many for usage/permissions.
-* Enforce device limits via a separate `active_streams` store or cache keyed by `account_id`.
+* Enforce device limits via a separate `active_streams` store or cache keyed by `account_id`

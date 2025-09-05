@@ -6,7 +6,7 @@ This section covers experimentation platforms, A/B testing frameworks, and stati
 
 ### Core Components
 
-**Experiment Design:**:
+**Experiment Design:**
 
 ```sql
 -- Experiment metadata table
@@ -39,7 +39,7 @@ CREATE TABLE experiment_variants (
 
 ### User Assignment and Randomization
 
-**Consistent Hashing for User Assignment:**:
+**Consistent Hashing for User Assignment:**
 
 ```python
 def assign_variant(user_id: str, experiment_id: str, traffic_pct: float) -> str:
@@ -59,7 +59,7 @@ def assign_variant(user_id: str, experiment_id: str, traffic_pct: float) -> str:
 
 ### Stratified Randomization
 
-**By User Segments:**:
+**By User Segments:**
 
 ```sql
 -- Stratified assignment by subscription tier
@@ -91,7 +91,7 @@ SELECT * FROM segmented_assignment;
 
 ### Power Analysis and Sample Size
 
-**Sample Size Calculation:**:
+**Sample Size Calculation:**
 
 ```python
 def calculate_sample_size(baseline_rate: float, mde: float,
@@ -124,7 +124,7 @@ def calculate_sample_size(baseline_rate: float, mde: float,
 
 ### Guardrail Metrics and Early Stopping
 
-**Automated Experiment Monitoring:**:
+**Automated Experiment Monitoring:**
 
 ```sql
 -- Daily guardrail checks
@@ -155,7 +155,7 @@ WHERE metric_date = CURRENT_DATE - INTERVAL '1' DAY
 
 ### CUPED (Controlled-experiment Using Pre-experiment Data)
 
-**Variance Reduction:**:
+**Variance Reduction:**
 
 ```sql
 -- CUPED implementation for more sensitive A/B tests
@@ -198,7 +198,7 @@ GROUP BY variant;
 
 ### Sequential Testing
 
-**P-value Monitoring Over Time:**:
+**P-value Monitoring Over Time:**
 
 ```python
 def sequential_test(control_data: List[float], treatment_data: List[float],
@@ -239,7 +239,7 @@ def sequential_test(control_data: List[float], treatment_data: List[float],
 
 ### Event Tracking and Collection
 
-**Client-Side Event Tracking:**:
+**Client-Side Event Tracking:**
 
 ```javascript
 // Modern event tracking implementation
@@ -265,7 +265,7 @@ class ExperimentTracker {
 
 ### Real-Time Experiment Results
 
-**Streaming Analytics:**:
+**Streaming Analytics:**
 
 ```sql
 -- Real-time experiment metrics with Kafka streams
@@ -301,7 +301,7 @@ GROUP BY exp_id, variant, event_name, TUMBLE(event_timestamp, INTERVAL '5' MINUT
 
 **Problem:** Non-random assignment leads to biased results.
 
-**Solutions:**:
+**Solutions:**
 
 - Use proper randomization methods
 - Stratify by key user characteristics
@@ -311,7 +311,7 @@ GROUP BY exp_id, variant, event_name, TUMBLE(event_timestamp, INTERVAL '5' MINUT
 
 **Problem:** Running many statistical tests increases false positive rate.
 
-**Solutions:**:
+**Solutions:**
 
 - Bonferroni correction for multiple comparisons
 - False Discovery Rate (FDR) control
@@ -321,7 +321,7 @@ GROUP BY exp_id, variant, event_name, TUMBLE(event_timestamp, INTERVAL '5' MINUT
 
 **Problem:** Aggregate results differ from subgroup results.
 
-**Solutions:**:
+**Solutions:**
 
 - Always analyze by key segments
 - Include interaction terms in statistical models
@@ -382,7 +382,7 @@ GROUP BY exp_id, variant, event_name, TUMBLE(event_timestamp, INTERVAL '5' MINUT
 
 ---
 
-**🔗 Cross-References:**:
+**🔗 Cross-References:**
 
 - [System Architecture](system-architecture.md) - Platform architecture for experimentation
 - [Performance Optimization](performance-optimization.md) - Measuring performance impact
